@@ -1,0 +1,213 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: black;
+}
+
+@font-face {
+  font-family: ADAM;
+  src: url("ADAM.CG PRO.otf");
+}
+
+::-moz-selection 
+{
+  color: #ff4f42;
+  background: #dedede;
+}
+
+::selection {
+  color: #ff4f42;
+  background: #dedede;
+}
+
+html body
+{
+	overflow-x: hidden;
+	background: black;
+}
+
+body img
+{
+	height: 250px;
+	margin: 20px;
+	border: 5px solid #ff4f42;
+	box-shadow: 1px 1px 5px #ff4f42;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+a
+{
+	transition: 0.5s;
+}
+
+a:hover
+{
+	background: #1b1b1b;
+}
+
+.navbar > a > div
+{
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+a:hover > div
+{
+	color: #ff4f42;
+}
+
+.navbar
+{
+	display: flex;
+	border-bottom: 1px solid #ff4f42;
+	position: sticky;
+	top: 0;
+	background: #ff4f42;
+	z-index: 1000;
+}
+
+.navbar > a
+{
+  padding: 1vw 10vw 1vw 11vw;
+  font-size: 2vw;
+}
+
+.container
+{
+	background: #1b1b1b;
+}
+
+.box
+{
+	display: flex;
+}
+
+.box > .year
+{
+	width: 20%;
+	text-align: center;
+	font-size: 25px;
+	border-right: 1px solid #ff4f42;
+}
+
+.box > .content
+{
+	padding: 20px;
+	width: 80%;
+}
+
+.content > h1
+{
+	font-size: 40px;
+	margin-bottom: 20px;
+	color: #ff4f42;
+}
+
+.content > h2
+{
+	font-size: 25px;
+	color: #dedede;
+}
+
+.content > p
+{
+	font-size: 20px;
+	margin: 10px 0;
+	color: #dedede;
+}
+
+.year
+{
+	position: relative;
+	background: #1b1b1b;
+}
+
+.year > h2
+{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #dedede;
+}
+
+.content
+{
+	border-top: 1px solid #ff4f42;
+}
+
+.container > .box:first-of-type > .content
+{
+	border: none;
+}
+
+#line
+{
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background: #dedede;
+}
+
+.special
+{
+	color: #ff4f42 !important;
+}
+
+.jumbotron
+{
+	width: 100%;
+	height: 100vh;
+    background-image: url("images/jumbotron.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.absolute-centered
+{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	transform: translate(-20% , -50%);
+	text-align: center;
+}
+
+.grey-panel
+{
+	background: rgba(0 , 0 , 0 , 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.jumbotron h1
+{
+	font-size: 6vw;
+	color: #ff4f42;
+	font-family: ADAM;
+}
+
+.jumbotron h3
+{
+	font-size: 1.5vw;
+	color: #dedede;
+	letter-spacing: 3px;
+}
+
+.jumbotron .description
+{
+	width: 80vw;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50% , 0);
+}
